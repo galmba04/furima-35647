@@ -12,10 +12,8 @@
 | first_name         | string | null: false |
 | family_name_kana   | string | null: false |
 | first_name_kana    | string | null: false |
-| birth_year         | string | null: false |
-| birth_month        | string | null: false |
-| birth_day          | string | null: false |
-| password           | string | null: false |
+| birth_day          | date   | null: false |
+| encrypted_password | string | null: false |
 
 ### Association
 
@@ -24,27 +22,27 @@
 
 ## items テーブル
 
-| Column    | Type       | Options                        |
-| --------- | ---------- | ------------------------------ |
-| name      | string     | null: false                    |
-| category  | string     | null: false                    |
-| price     | integer    | null: false                    |
-| text      | text       | null: false                    |
-| condition | integer    | null: false                    |
-| status    | integer    | null: false                    |
-| user_id   | references | null: false, foreign_key: true |
-| order_id  | references | null: false, foreign_key: true |
+| Column       | Type       | Options                        |
+| ------------ | ---------- | ------------------------------ |
+| name         | string     | null: false                    |
+| price        | integer    | null: false                    |
+| text         | text       | null: false                    |
+| category_id  | integer    | null: false                    |
+| status_id    | integer    | null: false                    |
+| shipping_id  | integer    | null: false                    |
+| area_id      | integer    | null: false                    |
+| user　　      | references | null: false, foreign_key: true |
 
 
 ### Association
-- belongs_to :users
-- has_one :orders
+- belongs_to :user
+- has_one :order
 
 ## orders テーブル
 | Column   | Type       | Options                        |
 | -------- | ---------- | ------------------------------ |
-| user_id  | references | null: false, foreign_key: true |
-| item_id  | references | null: false, foreign_key: true |
+| user     | references | null: false, foreign_key: true |
+| item     | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
