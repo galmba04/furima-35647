@@ -29,7 +29,7 @@
                     <mxGeometry y="86" width="240" height="174" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="orders" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-                    <mxGeometry x="260" y="840" width="260" height="86" as="geometry"/>
+                    <mxGeometry x="380" y="840" width="260" height="86" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="item" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="11">
                     <mxGeometry y="26" width="260" height="30" as="geometry"/>
@@ -48,17 +48,23 @@
                         <mxPoint x="420" y="590" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="31" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;entryX=-0.008;entryY=0.8;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.492;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5" target="12">
+                <mxCell id="31" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;entryX=0;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5" target="13">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
                         <mxPoint x="200" y="760" as="sourcePoint"/>
                         <mxPoint x="250" y="890" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="32" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;exitX=0.604;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.015;entryY=0.767;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="10" target="12">
+                <mxCell id="32" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;entryX=1.015;entryY=0.767;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="12">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="320" y="750" as="sourcePoint"/>
+                        <mxPoint x="683" y="581" as="sourcePoint"/>
                         <mxPoint x="420" y="650" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="addresses" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="760" width="240" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="postal_code&#10;&#10;prefecture&#10;&#10;city&#10;&#10;address&#10;&#10;building_name&#10;&#10;telephone&#10;&#10;user" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="33">
+                    <mxGeometry y="26" width="240" height="204" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
